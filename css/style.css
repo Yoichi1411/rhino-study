@@ -142,6 +142,31 @@ iframe{
     background-color: #929292;
 }
 
+.next-prev-button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.next-button1,
+.prev-button2,.next-button2,
+.prev-button3,.next-button3,
+.prev-button4{
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.next-button1:hover,
+.prev-button2:hover,.next-button2:hover,
+.prev-button3:hover,.next-button3:hover,
+.prev-button4:hover{
+    background-color: #e4e4e4;
+}
+
 
 
 /* Footer */
@@ -169,3 +194,130 @@ footer{
     display: none;
 }
 
+
+
+
+
+
+@media(max-width:1185px){
+    /* Left Wrapper */
+    .left-top-title{
+        margin-top: 30px;
+    }
+
+    .main-title{
+        width: 100%;
+        padding: 20px 15px;
+        font-size: 13px;
+    }
+
+    .left-top-title p{
+        font-size: 10px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .select-menu{
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .menu-item{
+        font-size: 12px;
+        padding: 10px 0;
+        margin-top: 13px;
+    }
+}
+
+
+
+@media(max-width:770px){
+    /* Left Wrapper */
+    .left-top-title{
+        margin-top: 30px;
+    }
+
+    .main-title{
+        width: 100%;
+        padding: 20px 15px;
+        font-size: 20px;
+    }
+
+    .left-top-title p{
+        font-size: 14px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .select-menu{
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .menu-item{
+        font-size: 17px;
+        padding: 10px 0;
+        margin-top: 13px;
+    }
+
+    /* Right Wrapper */
+    .main-logo{
+        width: 70%;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media(max-width:420px){
+    /* Main Wrapper */
+    .main-wrapper{
+        grid-template-columns: 1fr;
+}
+
+    /* Left Wrapper */
+    .left-wrapper{
+        display: none;
+    }
+
+    /* Right Wrapper */
+    .main-logo{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .movie-title{
+        font-size: 15px;
+    }
+    
+    iframe{
+        width: 100%;
+        height: 40vh;
+        margin-top: 10px;
+    }
+    
+    .movie-kaisetsu{
+        margin: 15px 0;
+        font-size: 12px;
+    }
+    
+    .download{
+        display: none;
+    }
+
+    /* Footer */
+    footer{
+        width: 100vw;
+        height: 50px;
+        font-size: 5px;
+    }
+
+    .copylight{
+        color: white;
+        font-size: 5px;
+        line-height: 50px;
+        font-family: sans-serif;
+    }
+}
