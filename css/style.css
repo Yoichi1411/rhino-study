@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6, p, div {
   padding: 0;
 }
 
+html,body{
+    height: 100%;
+}
+
 body {
   font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
 }
@@ -147,6 +151,7 @@ iframe{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .next-button1,
@@ -164,6 +169,19 @@ iframe{
 .prev-button2:hover,.next-button2:hover,
 .prev-button3:hover,.next-button3:hover,
 .prev-button4:hover{
+    background-color: #e4e4e4;
+}
+
+.page-back{
+    color: black;
+    font-size: 15px;
+    padding: 5px 15px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+.page-back:hover{
     background-color: #e4e4e4;
 }
 
@@ -275,7 +293,7 @@ footer{
     /* Main Wrapper */
     .main-wrapper{
         grid-template-columns: 1fr;
-}
+    }
 
     /* Left Wrapper */
     .left-wrapper{
@@ -311,7 +329,7 @@ footer{
     footer{
         width: 100vw;
         height: 50px;
-        font-size: 5px;
+        font-size: 7px;
     }
 
     .copylight{
