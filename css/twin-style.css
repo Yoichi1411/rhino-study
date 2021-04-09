@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+
+/* Main Wrapper */
+.main-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+}
+
+/* Left Wrapper */
+.left-wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #363636;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.left-top-title{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main-title{
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.left-top-title p{
+    color: white;
+    font-size: 13px;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.select-menu{
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.menu-item{
+    color: white;
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    margin-top: 13px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.menu-item:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Right Wrapper */
+.right-wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+.container2{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-logo{
+    width: 50%;
+    margin-top: 20px;
+}
+
+.movie-wrapper1,
+.movie-wrapper2,
+.movie-wrapper3,
+.movie-wrapper4{
+    width: 100%;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.movie-title{
+    font-size: 25px;
+}
+
+iframe{
+    width: 100%;
+    height: 40vh;
+    margin-top: 10px;
+}
+
+.movie-kaisetsu{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.download{
+    padding: 10px 50px;
+    color: white;
+    background-color: #666666;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+
+.download:hover{
+    background-color: #929292;
+}
+
+.next-prev-button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.next-button1,
+.prev-button2,.next-button2,
+.prev-button3,.next-button3,
+.prev-button4{
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.next-button1:hover,
+.prev-button2:hover,.next-button2:hover,
+.prev-button3:hover,.next-button3:hover,
+.prev-button4:hover{
+    background-color: black;
+    color: white;
+}
+
+.page-back{
+    color: black;
+    font-size: 15px;
+    padding: 5px 15px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+.page-back:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Footer */
+footer{
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+}
+
+.copylight{
+    color: white;
+    font-size: 10px;
+    line-height: 50px;
+    font-family: sans-serif;
+}
+
+/* Movie Wrapper(切り替え用) */
+.movie-wrapper2,
+.movie-wrapper3,
+.movie-wrapper4{
+    display: none;
+}
+
+
+
+
+
+
+@media(max-width:1185px){
+    /* Left Wrapper */
+    .left-top-title{
+        margin-top: 30px;
+    }
+
+    .main-title{
+        width: 100%;
+        padding: 20px 15px;
+        font-size: 13px;
+    }
+
+    .left-top-title p{
+        font-size: 10px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .select-menu{
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .menu-item{
+        font-size: 12px;
+        padding: 10px 0;
+        margin-top: 13px;
+    }
+}
+
+
+
+@media(max-width:770px){
+    /* Left Wrapper */
+    .left-top-title{
+        margin-top: 30px;
+    }
+
+    .main-title{
+        width: 100%;
+        padding: 20px 15px;
+        font-size: 20px;
+    }
+
+    .left-top-title p{
+        font-size: 14px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .select-menu{
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .menu-item{
+        font-size: 17px;
+        padding: 10px 0;
+        margin-top: 13px;
+    }
+
+    /* Right Wrapper */
+    .main-logo{
+        width: 70%;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media(max-width:420px){
+    /* Main Wrapper */
+    .main-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    /* Left Wrapper */
+    .left-wrapper{
+        display: none;
+    }
+
+    /* Right Wrapper */
+    .main-logo{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .movie-title{
+        font-size: 15px;
+    }
+    
+    iframe{
+        width: 100%;
+        height: 30vh;
+        margin-top: 10px;
+    }
+    
+    .movie-kaisetsu{
+        margin: 15px 0;
+        font-size: 12px;
+    }
+    
+    .download{
+        display: none;
+    }
+
+    /* Footer */
+    footer{
+        width: 100vw;
+        height: 50px;
+        font-size: 7px;
+    }
+
+    .copylight{
+        color: white;
+        font-size: 5px;
+        line-height: 50px;
+        font-family: sans-serif;
+    }
+}
