@@ -260,13 +260,15 @@ footer{
     }
 
     .main-title{
+        color: black;
         font-size: 25px;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid black;
         margin-top: 60px;
         padding-bottom: 10px;
     }
     
     .explain{
+        color: black;
         font-size: 13px;
         padding: 25px 0;
     }
