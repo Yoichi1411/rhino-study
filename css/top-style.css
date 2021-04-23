@@ -42,22 +42,38 @@ a {
     text-align: center;
 }
 
+.video1{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
 .main-title{
+    position: relative;
+    color: white;
     font-family: sans-serif;
     font-weight: 900;
     font-size: 35px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     margin-top: 60px;
     padding-bottom: 10px;
     animation: fadeIn 1s ease 0.5s 1 backwards running,slideTop 1s ease 0.5s 1 backwards running;
+    z-index: 1;
 }
 
 .explain{
+    position: relative;
+    color: white;
     font-family: sans-serif;
     font-weight: 500;
     font-size: 20px;
     padding: 25px 0;
     animation: fadeIn 1s ease 2s 1 backwards running,slideTop 1s ease 2s 1 backwards running;
+    z-index: 1;
 }
 
 .buttons{
