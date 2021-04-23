@@ -255,6 +255,10 @@ footer{
 
 
 @media(max-width:420px){
+    .video1{
+        display: none;
+    }
+
     .main-title{
         font-size: 25px;
         border-bottom: 2px solid white;
