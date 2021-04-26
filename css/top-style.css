@@ -351,6 +351,10 @@ footer{
         margin-top: 30px;
     }
 
+    .start-button{
+        font-size: 12px;
+    }
+
     .close-button{
         top: 65%;
     }
