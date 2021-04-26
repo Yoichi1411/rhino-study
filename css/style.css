@@ -140,6 +140,7 @@ iframe{
     background-color: #666666;
     border-radius: 5px;
     transition: all 0.3s ease-out;
+    display: none;
 }
 
 .download:hover{
