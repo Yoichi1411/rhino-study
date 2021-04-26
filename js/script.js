@@ -1,4 +1,15 @@
 $(function(){
+    //冒頭解説動画
+    $('.start').click(function(){
+        $('.start-wrapper').fadeIn();
+    });
+
+    $('.close-button').click(function(){
+        $('.start-wrapper').fadeOut();
+    });
+
+
+
     //動画切り替え
     $('#movie1,.prev-button2').click(function(){
         $('.movie-wrapper2,.movie-wrapper3,.movie-wrapper4').fadeOut(0);
@@ -27,3 +38,4 @@ window.onload = function() {
     //
     
 };
+
